@@ -1,0 +1,441 @@
+    ¢z¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢{
+    ¢x                 ¡E MobaXterm Personal Edition v23.4 ¡E                 ¢x
+    ¢x               (SSH client, X server and network tools)               ¢x
+    ¢x                                                                      ¢x
+    ¢x ? SSH session to root@10.205.164.10                                  ¢x
+    ¢x   ¡E Direct SSH      :  ?                                             ¢x
+    ¢x   ¡E SSH compression :  ?  (disabled or not supported by server)      ¢x
+    ¢x   ¡E SSH-browser     :  ?                                             ¢x
+    ¢x   ¡E X11-forwarding  :  ?  (remote display is forwarded through SSH)  ¢x
+    ¢x                                                                      ¢x
+    ¢x ? For more info, ctrl+click on help or visit our website.            ¢x
+    ¢|¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢}
+
+sh: /usr/bin/xauth: not found
+
+
+BusyBox v1.25.1 (2023-07-14 11:32:14 CST) built-in shell (ash)
+
+              ¢i¢i¢i¢i¢iùß ¢i¢i¢i¢i¢i¢i¢i¢iùß ¢i¢i¢i¢i¢i¢iùß ¢i¢i¢i¢i¢i¢iùß
+             ¢i¢iùÝùùùù¢i¢iùßùãùùùù¢i¢iùÝùùùùùå¢i¢iùÝùùùùùù¢i¢iùß¢i¢iùÝùùùù¢i¢iùß
+             ¢i¢i¢i¢i¢i¢i¢iùø   ¢i¢iùø   ¢i¢iùø   ¢i¢iùø¢i¢i¢i¢i¢i¢iùÝùå
+             ¢i¢iùÝùùùù¢i¢iùø   ¢i¢iùø   ¢i¢iùø   ¢i¢iùø¢i¢iùÝùùùùùùùå
+             ¢i¢iùø  ¢i¢iùø   ¢i¢iùø   ùã¢i¢i¢i¢i¢i¢iùÝùå¢i¢iùø
+             ùãùùùå  ùãùùùå   ùãùùùå    ùãùùùùùùùùùùùå ùãùùùå
+ ---------------------------------------------------------------
+   For those about to rock... (Chaos Calmer, 30c9958)
+ ---------------------------------------------------------------
+root@AtopTechnologies:~# while true; do echo -ne "$(date) - "; echo -ne "at+bnrinfo\r\n" | microcom -t 10
+info"; sleep 1; done
+Fri Jan 12 12:14:53 CST 2024 - at+bnrinfo
+Fri Jan 12 12:14:55 CST 2024 - at+bnrinfo
+AT+COPS?12 12:14:59 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:15:02 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:05 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:07 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:10 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:12 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:15 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:18 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:15:22 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:15:25 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:29 CST 2024 - at+bnrinfo
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 28 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:15:32 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:34 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:15:37 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:15:41 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:43 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:46 CST 2024 - at+bnrinfo
+Fri Jan 12 12:15:49 CST 2024 - Fri Jan 12 12:15:51 CST 2024 - Fri Jan 12 12:15:55 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:15:57 CST 2024 - at+bnrinfo
+AT+COPS?12 12:16:01 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:16:04 CST 2024 - at+bnrinfo
+Fri Jan 12 12:16:06 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:16:09 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:16:13 CST 2024 - at+bnrinfo
+Fri Jan 12 12:16:16 CST 2024 - at+bnrinfo
+Fri Jan 12 12:16:19 CST 2024 - at+bnrinfo
+Fri Jan 12 12:16:22 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:16:26 CST 2024 - at+bnrinfo
+Fri Jan 12 12:16:29 CST 2024 - at+bnrinfo
+AT+ICCID12 12:16:33 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+physical cell ID:1, averaged PUSCH TX power :-255 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 32 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -85 dBm, phase: 0 degree, sinr: 28 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 32 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:16:36 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:16:38 CST 2024 - at+bnrinfo
+Fri Jan 12 12:16:42 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+AT+BNMEA12 12:16:45 CST 2024 - at+bnrinfo
+Fri Jan 12 12:16:47 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:16:50 CST 2024 - at+bnrinfo
+Fri Jan 12 12:16:54 CST 2024 - NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+AT+BGPS?12 12:16:57 CST 2024 - at+bnrinfo
+Fri Jan 12 12:16:59 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:17:02 CST 2024 - at+bnrinfo
+Fri Jan 12 12:17:06 CST 2024 - at+bnrinfo
+AT+BINFO12 12:17:09 CST 2024 - at+bnrinfo
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -72 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -85 dBm, phase: 0 degree, sinr: 28 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:17:12 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:17:14 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:17:18 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:17:21 CST 2024 - at+bnrinfo
+Fri Jan 12 12:17:25 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+AT+BGPS?12 12:17:28 CST 2024 - at+bnrinfo
+Fri Jan 12 12:17:30 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:17:33 CST 2024 - at+bnrinfo
+Fri Jan 12 12:17:37 CST 2024 - at+bnrinfo
+Fri Jan 12 12:17:39 CST 2024 - Fri Jan 12 12:17:42 CST 2024 - at+bnrinfo
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 28 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 29 dB
+AT+CESQDBM 12:17:45 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:17:54 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 31 dB
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 31 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -85 dBm, phase: 0 degree, sinr: 29 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 31 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:17:57 CST 2024 - at+bnrinfo
+Fri Jan 12 12:17:59 CST 2024 - at+bnrinfo
+AT+COPS?12 12:18:03 CST 2024 - at+bnrinfo
+AT+BINFO12 12:18:06 CST 2024 - at+bnrinfo
+physical cell ID:1, averaged PUSCH TX power :-255 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -85 dBm, phase: 0 degree, sinr: 29 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:18:09 CST 2024 - at+bnrinfo
+AT+CESQDBM 12:18:11 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:18:20 CST 2024 - Fri Jan 12 12:18:23 CST 2024 - Fri Jan 12 12:18:26 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:18:29 CST 2024 - at+bnrinfo
+Fri Jan 12 12:18:33 CST 2024 - NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+AT+BGPS?12 12:18:36 CST 2024 - at+bnrinfo
+Fri Jan 12 12:18:38 CST 2024 - NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:18:47 CST 2024 - at+bnrinfo
+AT+CESQDBM 12:18:49 CST 2024 - Fri Jan 12 12:18:52 CST 2024 - Fri Jan 12 12:18:55 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+AT+BGPS?12 12:18:59 CST 2024 - at+bnrinfo
+Fri Jan 12 12:19:01 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:19:04 CST 2024 - at+bnrinfo
+AT+CESQDBM 12:19:08 CST 2024 - Fri Jan 12 12:19:10 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:19:14 CST 2024 - at+bnrinfo
+Fri Jan 12 12:19:17 CST 2024 - at+bnrinfo
+Fri Jan 12 12:19:20 CST 2024 - at+bnrinfo
+Fri Jan 12 12:19:24 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+physical cell ID:1, averaged PUSCH TX power :17 dBm, averaged PUCCH TX power :                           -255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -72 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 32 dB
+RX1 power: -73 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 28 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+AT+BNMEA12 12:19:27 CST 2024 - at+bnrinfo
+Fri Jan 12 12:19:29 CST 2024 - at+bnrinfo
+Fri Jan 12 12:19:32 CST 2024 - at+bnrinfo
+Fri Jan 12 12:19:36 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+physical cell ID:1, averaged PUSCH TX power :13 dBm, averaged PUCCH TX power :                           -255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 32 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -73 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 29 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 32 dB
+RX3 power: -73 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:19:39 CST 2024 - at+bnrinfo
+Fri Jan 12 12:19:41 CST 2024 - at+bnrinfo
+Fri Jan 12 12:19:45 CST 2024 - at+bnrinfo
+Fri Jan 12 12:19:47 CST 2024 - Fri Jan 12 12:19:50 CST 2024 - NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:19:54 CST 2024 - Fri Jan 12 12:19:56 CST 2024 - Fri Jan 12 12:20:00 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:03 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:06 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:08 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:11 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:13 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:16 CST 2024 - Fri Jan 12 12:20:18 CST 2024 - Fri Jan 12 12:20:22 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:24 CST 2024 - at+bnrinfo
+ATI Jan 12 12:20:27 CST 2024 - Fri Jan 12 12:20:30 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:33 CST 2024 - at+bnrinfo
+AT+CIMI 12 12:20:36 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:39 CST 2024 - at+bnrinfo
+AT+BGPS?12 12:20:42 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:45 CST 2024 - at+bnrinfo
+Fri Jan 12 12:20:48 CST 2024 - at+bnrinfo
+AT+COPS?12 12:20:52 CST 2024 - at+bnrinfo
+AT+BINFO12 12:20:55 CST 2024 - at+bnrinfo
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 32 dB
+RX0 power: -72 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -73 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 28 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 32 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+AT+BNMEA12 12:20:58 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:00 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:21:03 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:07 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:09 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:12 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:15 CST 2024 - NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+AT+BNMEA12 12:21:19 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:22 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:21:25 CST 2024 - at+bnrinfo
+AT+CGSN 12 12:21:29 CST 2024 - at+bnrinfo
+AT+CESQDBM 12:21:31 CST 2024 - Fri Jan 12 12:21:34 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:21:38 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:41 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:44 CST 2024 - at+bnrinfo
+AT+CIMI 12 12:21:47 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:50 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:53 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:56 CST 2024 - at+bnrinfo
+Fri Jan 12 12:21:59 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:22:02 CST 2024 - at+bnrinfo
+AT+COPS?12 12:22:06 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:08 CST 2024 - Fri Jan 12 12:22:11 CST 2024 - Fri Jan 12 12:22:14 CST 2024 - at+bnrinfo
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -72 dBm,ecio: -10 dB, rsrp: -83 dBm, phase: 0 degree, sinr: 30 dB
+RX1 power: -72 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 29 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -75 dBm,ecio: -10 dB, rsrp: -85 dBm,phase: 0 degree,sinr: 27 dB
+Fri Jan 12 12:22:18 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:20 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:23 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:26 CST 2024 - Fri Jan 12 12:22:29 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:31 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:35 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:37 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:40 CST 2024 - at+bnrinfo
+AT+BGPS?12 12:22:43 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:46 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:49 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:52 CST 2024 - at+bnrinfo
+Fri Jan 12 12:22:55 CST 2024 - Fri Jan 12 12:22:58 CST 2024 - at+bnrinfo
+Fri Jan 12 12:23:01 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -81 dBm, SINR 33 dB
+Fri Jan 12 12:23:05 CST 2024 - at+bnrinfo
+AT+CESQDBM 12:23:08 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -81 dBm, SINR 34 dB
+AT+COPS?12 12:23:17 CST 2024 - at+bnrinfo
+Fri Jan 12 12:23:19 CST 2024 - at+bnrinfo
+Fri Jan 12 12:23:22 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -81 dBm, SINR 33 dB
+Fri Jan 12 12:23:26 CST 2024 - at+bnrinfo
+Fri Jan 12 12:23:29 CST 2024 - at+bnrinfo
+Fri Jan 12 12:23:33 CST 2024 - at+bnrinfo
+Fri Jan 12 12:23:35 CST 2024 - at+bnrinfo
+AT+ICCID12 12:23:38 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -81 dBm, SINR 32 dB
+Fri Jan 12 12:23:42 CST 2024 - at+bnrinfo
+Fri Jan 12 12:23:45 CST 2024 - at+bnrinfo
+ATI Jan 12 12:23:48 CST 2024 - at+bnrinfo
+AT+CPIN?12 12:23:51 CST 2024 - at+bnrinfo
+Fri Jan 12 12:23:54 CST 2024 - Fri Jan 12 12:23:57 CST 2024 - at+bnrinfo
+Fri Jan 12 12:23:59 CST 2024 - at+bnrinfo
+Fri Jan 12 12:24:02 CST 2024 - Fri Jan 12 12:24:04 CST 2024 - Fri Jan 12 12:24:07 CST 2024 - Fri Jan 12 1
+Fri Jan 12 12:24:13 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -82 dBm, SINR 32 dB
+Fri Jan 12 12:24:17 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:24:20 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -82 dBm, SINR 32 dB
+Fri Jan 12 12:24:24 CST 2024 - physical cell ID:1, averaged PUSCH TX power :11 dBm, averaged PUCCH TX pow
+RSRQ -11 dB, RSRP -82 dBm,SINR 32 dB
+RX0 power: -70 dBm,ecio: -10 dB, rsrp: -81 dBm, phase: 0 degree, sinr: 32 dB
+RX1 power: -73 dBm,ecio: -10 dB, rsrp: -83 dBm, phase: 0 degree, sinr: 29 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 32 dB
+RX3 power: -75 dBm,ecio: -10 dB, rsrp: -85 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:24:27 CST 2024 - at+bnrinfo
+Fri Jan 12 12:24:29 CST 2024 - at+bnrinfo
+Fri Jan 12 12:24:32 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -82 dBm, SINR 32 dB
+Fri Jan 12 12:24:36 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:24:39 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:24:43 CST 2024 - at+bnrinfo
+Fri Jan 12 12:24:46 CST 2024 - at+bnrinfo
+Fri Jan 12 12:24:49 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:24:52 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:24:56 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:24:59 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+AT+BNMEA12 12:25:03 CST 2024 - at+bnrinfo
+Fri Jan 12 12:25:06 CST 2024 - at+bnrinfo
+ATIGMIn 12 12:25:09 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+AT+GMIQDBM 12:25:13 CST 2024 - Fri Jan 12 12:25:16 CST 2024 - at+bnrinfo
+Fri Jan 12 12:25:25 CST 2024 - NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 32 dB
+RX0 power: -72 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -73 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 28 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 32 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:25:28 CST 2024 - at+bnrinfo
+Fri Jan 12 12:25:30 CST 2024 - at+bnrinfo
+Fri Jan 12 12:25:33 CST 2024 - at+bnrinfo
+Fri Jan 12 12:25:36 CST 2024 - at+bnrinfo
+Fri Jan 12 12:25:39 CST 2024 - at+bnrinfo
+AT+BNMEA12 12:25:42 CST 2024 - at+bnrinfo
+Fri Jan 12 12:25:46 CST 2024 - at+bnrinfo
+Fri Jan 12 12:25:48 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:25:52 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:25:55 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+AT+CESQDBM 12:25:59 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:26:08 CST 2024 - Fri Jan 12 12:26:11 CST 2024 - Fri Jan 12 12:26:14 CST 2024 - at+bnrinfo
+Fri Jan 12 12:26:17 CST 2024 - at+bnrinfo
+Fri Jan 12 12:26:20 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:26:23 CST 2024 - at+bnrinfo
+AT+COPS?12 12:26:27 CST 2024 - at+bnrinfo
+AT+CESQDBM 12:26:30 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:26:33 CST 2024 - at+bnrinfo
+Fri Jan 12 12:26:36 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:26:39 CST 2024 - at+bnrinfo
+AT+CPIN?12 12:26:43 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:26:46 CST 2024 - at+bnrinfo
+Fri Jan 12 12:26:48 CST 2024 - at+bnrinfo
+Fri Jan 12 12:26:51 CST 2024 - Fri Jan 12 12:26:54 CST 2024 - at+bnrinfo
+Fri Jan 12 12:26:57 CST 2024 - at+bnrinfo
+AT+CGSN 12 12:27:00 CST 2024 - Fri Jan 12 12:27:03 CST 2024 - at+bnrinfo
+Fri Jan 12 12:27:06 CST 2024 - Fri Jan 12 12:27:09 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:27:13 CST 2024 - at+bnrinfo
+AT+CESQDBM 12:27:16 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 31 dB
+Fri Jan 12 12:27:25 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 28 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+AT+CESQDBM 12:27:28 CST 2024 - Fri Jan 12 12:27:30 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:27:39 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:27:42 CST 2024 - at+bnrinfo
+Fri Jan 12 12:27:46 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -72 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 29 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:27:49 CST 2024 - at+bnrinfo
+Fri Jan 12 12:27:51 CST 2024 - at+bnrinfo
+AT+CPIN?12 12:27:55 CST 2024 - at+bnrinfo
+AT+BINFO12 12:27:57 CST 2024 - at+bnrinfo
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 29 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -73 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+AT+BNMEA12 12:28:01 CST 2024 - at+bnrinfo
+Fri Jan 12 12:28:03 CST 2024 - at+bnrinfo
+Fri Jan 12 12:28:06 CST 2024 - at+bnrinfo
+Fri Jan 12 12:28:09 CST 2024 - at+bnrinfo
+Fri Jan 12 12:28:13 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:28:16 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:28:19 CST 2024 - at+bnrinfo
+Fri Jan 12 12:28:23 CST 2024 - Fri Jan 12 12:28:25 CST 2024 - at+bnrinfo
+Fri Jan 12 12:28:29 CST 2024 - Fri Jan 12 12:28:31 CST 2024 - at+bnrinfo
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 32 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 28 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 32 dB
+RX3 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:28:34 CST 2024 - at+bnrinfo
+Fri Jan 12 12:28:37 CST 2024 - at+bnrinfo
+Fri Jan 12 12:28:40 CST 2024 - at+bnrinfo
+AT+CGSN 12 12:28:43 CST 2024 - Fri Jan 12 12:28:47 CST 2024 - at+bnrinfo
+Fri Jan 12 12:28:49 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+AT+BGPS?12 12:28:53 CST 2024 - at+bnrinfo
+AT+CESQDBM 12:28:55 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:29:04 CST 2024 - at+bnrinfo
+Fri Jan 12 12:29:06 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+Fri Jan 12 12:29:10 CST 2024 - Fri Jan 12 12:29:13 CST 2024 - at+bnrinfo
+Fri Jan 12 12:29:16 CST 2024 - at+bnrinfo
+Fri Jan 12 12:29:19 CST 2024 - at+bnrinfo
+Fri Jan 12 12:29:22 CST 2024 - at+bnrinfo
+Fri Jan 12 12:29:25 CST 2024 - at+bnrinfo
+Fri Jan 12 12:29:27 CST 2024 - at+bnrinfo
+AT+CESQDBM 12:29:30 CST 2024 - Fri Jan 12 12:29:32 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:29:40 CST 2024 - NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 32 dB
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -84 dBm, phase: 0 degree, sinr: 29 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -73 dBm,ecio: -10 dB, rsrp: -84 dBm,phase: 0 degree,sinr: 29 dB
+Fri Jan 12 12:29:43 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:29:45 CST 2024 - at+bnrinfo
+AT+BINFO12 12:29:49 CST 2024 - at+bnrinfo
+physical cell ID:1, averaged PUSCH TX power :12 dBm, averaged PUCCH TX power :-255 dBm,
+RSRQ -11 dB, RSRP -83 dBm,SINR 33 dB
+RX0 power: -71 dBm,ecio: -10 dB, rsrp: -82 dBm, phase: 0 degree, sinr: 31 dB
+RX1 power: -74 dBm,ecio: -10 dB, rsrp: -85 dBm, phase: 0 degree, sinr: 29 dB
+RX2 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 33 dB
+RX3 power: -73 dBm,ecio: -10 dB, rsrp: -83 dBm,phase: 0 degree,sinr: 28 dB
+Fri Jan 12 12:29:52 CST 2024 - at+bnrinfo
+Fri Jan 12 12:29:54 CST 2024 - at+bnrinfo
+ATI Jan 12 12:29:57 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:30:01 CST 2024 - Fri Jan 12 12:30:04 CST 2024 - at+bnrinfo
+Fri Jan 12 12:30:07 CST 2024 - at+bnrinfo
+AT+GMIn 12 12:30:10 CST 2024 - at+bnrinfo
+Fri Jan 12 12:30:14 CST 2024 - Fri Jan 12 12:30:16 CST 2024 - Fri Jan 12 12:30:19 CST 2024 - at+bnrinfo
+NR5G: RSRQ -11 dB, RSRP -83 dBm, SINR 33 dB
+Fri Jan 12 12:30:23 CST 2024 - at+bnrinfo
+Fri Jan 12 12:30:26 CST 2024 - at+bnrinfo
+Fri Jan 12 12:30:29 CST 2024 - at+bnrinfo
+Fri Jan 12 12:30:32 CST 2024 - Fri Jan 12 12:30:35 CST 2024 - at+bnrinfo
+Fri Jan 12 12:30:37 CST 2024 - at+bnrinfo
+Fri Jan 12 12:30:40 CST 2024 - ^C
+root@AtopTechnologies:~#
