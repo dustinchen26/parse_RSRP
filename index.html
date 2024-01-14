@@ -35,8 +35,8 @@
       var inputText = document.getElementById('logInput').value;
 
       // Regular expressions to extract required information
-      var regex = /(\w{3} \w{3} \d{2} \d{2}:\d{2}:\d{2} UTC \d{4}) - at\+bnrinfo[\s\S]*?averaged PUSCH TX power :(-?\d+) dBm[\s\S]*?RSRP (-?\d+) dBm[\s\S]*?SINR (\d+) dB[\s\S]*?RX0 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX1 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX2 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX3 power:.*?rsrp: (-?\d+) dBm/g;
-
+      var regex = /(\w{3} \w{3} \d{2} \d{2}:\d{2}:\d{2} \S+ \d{4}) - at\+bnrinfo[\s\S]*?averaged PUSCH TX power :(-?\d+) dBm[\s\S]*?RSRP (-?\d+) dBm[\s\S]*?SINR (\d+) dB[\s\S]*?RX0 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX1 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX2 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX3 power:.*?rsrp: (-?\d+) dBm/g;
+      
       // Match regular expressions against input text
       var matches = inputText.matchAll(regex);
 

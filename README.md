@@ -26,7 +26,7 @@ RX3 power: -83 dBm,ecio: -10 dB, rsrp: -93 dBm,phase: 0 degree,sinr: 26 dB
 Thu Jan 11 10:01:27 UTC 2024 - Thu Jan 11 10:01:30 UTC 2024 - at+bnrinfo
 
 【Output】
-Time							PUSCH TX power	RSRP	SINR	RX0_rsrp	RX1_rsrp	RX2_rsrp	RX3_rsrp
+Time	PUSCH TX power	RSRP	SINR	RX0_rsrp	RX1_rsrp	RX2_rsrp	RX3_rsrp
 Thu Jan 11 10:01:24 UTC 2024	20 dBm			-91 dBm	27 dB	-90 dBm		-100 dBm	-93 dBm		-93 dBm
 
 ```
