@@ -29,27 +29,33 @@ RX3 power: -66 dBm,ecio: -10 dB, rsrp: -76 dBm,phase: 0 degree,sinr: 33 dB
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parse_RSRP_SINR_PUSCH-power</title>
   <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.2;
-            font-size: 14px;
-        }
-		
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.2;
+      font-size: 14px;
+    }
+
     table {
       border-collapse: collapse;
       width: auto;
       margin: 15px;
     }
 
-    th, td {
+    th,
+    td {
       border: 1px solid #dddddd;
       text-align: left;
       padding: 6px;
+    }
+
+    .red {
+      color: red;
     }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
@@ -58,8 +64,9 @@ RX3 power: -66 dBm,ecio: -10 dB, rsrp: -76 dBm,phase: 0 degree,sinr: 33 dB
       var inputText = document.getElementById('logInput').value;
 
       // Regular expressions to extract required information
-      var regex = /(\w{3} \w{3} \d{2} \d{2}:\d{2}:\d{2} \S+ \d{4}) - at\+bnrinfo[\s\S]*?averaged PUSCH TX power :(-?\d+) dBm[\s\S]*?RSRP (-?\d+) dBm[\s\S]*?SINR (\d+) dB[\s\S]*?RX0 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX1 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX2 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX3 power:.*?rsrp: (-?\d+) dBm/g;
-      
+      var regex =
+        /(\w{3} \w{3} \d{2} \d{2}:\d{2}:\d{2} \S+ \d{4}) - at\+bnrinfo[\s\S]*?averaged PUSCH TX power :(-?\d+) dBm[\s\S]*?RSRP (-?\d+) dBm[\s\S]*?SINR (\d+) dB[\s\S]*?RX0 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX1 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX2 power:.*?rsrp: (-?\d+) dBm[\s\S]*?RX3 power:.*?rsrp: (-?\d+) dBm/g;
+
       // Match regular expressions against input text
       var matches = inputText.matchAll(regex);
 
@@ -69,12 +76,13 @@ RX3 power: -66 dBm,ecio: -10 dB, rsrp: -76 dBm,phase: 0 degree,sinr: 33 dB
 
       // Create table header
       var headerRow = outputTable.insertRow(0);
-      headerRow.innerHTML = '<th>Time</th><th>PUSCH TX power</th><th>RSRP</th><th>SINR</th><th>RX0_rsrp</th><th>RX1_rsrp</th><th>RX2_rsrp</th><th>RX3_rsrp</th>';
+      headerRow.innerHTML =
+        '<th>Time</th><th>PUSCH TX power</th><th>RSRP</th><th>SINR</th><th>RX0_rsrp</th><th>RX1_rsrp</th><th>RX2_rsrp</th><th>RX3_rsrp</th>';
 
       var rowNum = 1;
-    var data = [ // Initialize array with headers for Excel export
-      ['Time', 'PUSCH TX power', 'RSRP', 'SINR', 'RX0_rsrp', 'RX1_rsrp', 'RX2_rsrp', 'RX3_rsrp']
-    ];
+      var data = [ // Initialize array with headers for Excel export
+        ['Time', 'PUSCH TX power', 'RSRP', 'SINR', 'RX0_rsrp', 'RX1_rsrp', 'RX2_rsrp', 'RX3_rsrp']
+      ];
 
       for (const match of matches) {
         // Check if each value is defined before displaying
@@ -95,7 +103,9 @@ RX3 power: -66 dBm,ecio: -10 dB, rsrp: -76 dBm,phase: 0 degree,sinr: 33 dB
           rowNum++;
 
           // Push row data to the array for Excel export
-          data.push([match[1], match[2] + ' dBm', match[3] + ' dBm', match[4] + ' dB', match[5] + ' dBm', match[6] + ' dBm', match[7] + ' dBm', match[8] + ' dBm']);
+          data.push([match[1], match[2] + ' dBm', match[3] + ' dBm', match[4] + ' dB', match[5] + ' dBm', match[6] +
+            ' dBm', match[7] + ' dBm', match[8] + ' dBm'
+          ]);
         }
 
         // Display debug information in console
@@ -117,16 +127,29 @@ RX3 power: -66 dBm,ecio: -10 dB, rsrp: -76 dBm,phase: 0 degree,sinr: 33 dB
     }
   </script>
 </head>
+
 <body>
-    <h2>Parse_RSRP_SINR_PUSCH-power</h2>
-    <p style="margin: 0;">Author: Dustin_Chen, email: <a href="mailto:Dustin_Chen@compal.com"
-            style="line-height: 1;">Dustin_Chen@compal.com</a> or <a href="mailto:chuhpsdustin@gmail.com"
-            style="line-height: 1;">chuhpsdustin@gmail.com</a></p>
-  <br>			
-  <textarea id="logInput" rows="10" cols="80"></textarea>
-  <br>
-  <button onclick="parseLog()">Parse and Export to Excel</button>
-  <table id="output"></table>
-  <div id="debug"></div>
+  <h2>Parse_RSRP_SINR_PUSCH-power</h2>
+  <p style="margin: 0;">Author: Dustin_Chen, email: <a href="mailto:Dustin_Chen@compal.com"
+      style="line-height: 1;">Dustin_Chen@compal.com</a> or <a href="mailto:chuhpsdustin@gmail.com"
+      style="line-height: 1;">chuhpsdustin@gmail.com</a></p>
+  <ul>
+    <li><strong>【How to use】</strong>
+      <ul>
+        <li> 1. Use MobaXterm ssh to enter the CPE</li>
+        <li> 2. use command : <span class="red">while true; do echo -ne "$(date) - "; echo -ne "at+bnrinfo\r\n" |
+            microcom -t 1000 /dev/ttyUSB1; sleep 1; done </span></li>
+        <li> 3. Paste the <span class="red">entire console content</span> below to produce "Parsed excel results"</li>
+        <textarea id="logInput" rows="10" cols="80"></textarea>
+        <br>
+        <button onclick="parseLog()">Parse and Export to Excel</button>
+        <table id="output"></table>
+        <div id="debug"></div>
+      </ul>
+    </li>
+
+  </ul>
+
 </body>
+
 </html>
