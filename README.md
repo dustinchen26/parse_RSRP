@@ -4,14 +4,13 @@ online tool => https://dustinchen26.github.io/parse_RSRP
 
 ## Example
 ```
-【Input】
-  Copyright © [2023] [Dustin_Chen]. All rights reserved.
-  Author: Dustin_Chen
-  Email:  Dustin_Chen@compal.com or chuhpsdustin@gmail.com
-  
-  How to use: enter CPE, and use command to generate "output.txt". Paste the "output.txt" below, and push "Parse and Export to Excel"
-  【command】while true; do output="$(date) - $(echo -ne 'at+bnrinfo\r\n' | microcom -t 1000 /dev/ttyUSB1 | grep -E 'dBm|bnrinfo')"; echo -ne "$output\n" | tee -a output.txt; sleep 1; done
-  
+  【How to use】
+    1. MobaXterm Session -> SSH -> Termnial settings -> Select "Log terminal output to": _DesktopDir_
+	2. ssh into CPE. ex: 10.205.164.10
+	3. use below command to read at+bnrinfo: read every 60 sec, until 3600 sec
+	   start_time=$(date +%s); while [ $(( $(date +%s) - start_time )) -lt 3600 ]; do echo -ne "$(date) - "; echo -ne "at+bnrinfo\r\n" | microcom -t 1000 /dev/ttyUSB1 | grep -E "dBm|bnrinfo"; sleep 60; done
+	4. paste the _DesktopDir_ output file content below to parse
+	
               █████╗ ████████╗ ██████╗ ██████╗
              ██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗
              ███████║   ██║   ██║   ██║██████╔╝

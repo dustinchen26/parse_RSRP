@@ -4,36 +4,12 @@
   Email:  Dustin_Chen@compal.com or chuhpsdustin@gmail.com
   
   How to use: enter CPE, and use command to generate "output.txt". Paste the "output.txt" below, and push "Parse and Export to Excel"
-  【command】
-  // 每30秒执行一次sleep 30，3600秒停止-lt 3600，執行前先刪除舊的10.205.164.10.txt
-     start_time=$(date +%s); [ -f 10.205.164.10.txt ] && rm 10.205.164.10.txt; while [ $(($(date +%s) - $start_time)) -lt 3600 ]; do output="$(date) - $(echo -ne 'at+bnrinfo\r\n' | microcom -t 1000 /dev/ttyUSB1 | grep -E 'dBm|bnrinfo')"; echo -ne "$output\n" | tee -a 10.205.164.10.txt; sleep 30; done
-  
-              █████╗ ████████╗ ██████╗ ██████╗
-             ██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗
-             ███████║   ██║   ██║   ██║██████╔╝
-             ██╔══██║   ██║   ██║   ██║██╔═══╝
-             ██║  ██║   ██║   ╚██████╔╝██║
-             ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝
- ---------------------------------------------------------------
-   For those about to rock... (Chaos Calmer, 30c9958)
- ---------------------------------------------------------------
-root@AtopTechnologies:~# start_time=$(date +%s); [ -f 10.205.164.10.txt ] && rm 10.205.164.10.txt; while [ $(($(date +%s) - $start_time)) -lt 3600 ]; do outpu
-t="$(date) - $(echo -ne 'at+bnrinfo\r\n' | microcom -t 1000 /dev/ttyUSB1 | grep -E 'dBm|bnrinfo')"; echo -ne "$output\n" | tee -a 10.205.164.10.txt; sleep 30;
- done
-Sun Jan 21 22:15:54 CST 2024 - at+bnrinfo
-physical cell ID:1, averaged PUSCH TX power :3 dBm, averaged PUCCH TX power :-255 dBm,
-RSRQ -11 dB, RSRP -74 dBm,SINR 35 dB
-RX0 power: -60 dBm,ecio: -10 dB, rsrp: -71 dBm, phase: 0 degree, sinr: 34 dB
-RX1 power: -69 dBm,ecio: -10 dB, rsrp: -79 dBm, phase: 0 degree, sinr: 32 dB
-RX2 power: -61 dBm,ecio: -10 dB, rsrp: -71 dBm, phase: 0 degree, sinr: 35 dB
-RX3 power: -63 dBm,ecio: -10 dB, rsrp: -74 dBm,phase: 0 degree,sinr: 33 dB
-Sun Jan 21 22:16:27 CST 2024 - at+bnrinfo
-physical cell ID:1, averaged PUSCH TX power :4 dBm, averaged PUCCH TX power :-255 dBm,
-RSRQ -11 dB, RSRP -74 dBm,SINR 34 dB
-RX0 power: -64 dBm,ecio: -10 dB, rsrp: -74 dBm, phase: 0 degree, sinr: 34 dB
-RX1 power: -65 dBm,ecio: -10 dB, rsrp: -75 dBm, phase: 0 degree, sinr: 33 dB
-RX2 power: -61 dBm,ecio: -10 dB, rsrp: -71 dBm, phase: 0 degree, sinr: -20 dB
-RX3 power: -68 dBm,ecio: -10 dB, rsrp: -78 dBm,phase: 0 degree,sinr: -20 dB
+  【How to use】
+    1. MobaXterm Session -> SSH -> Termnial settings -> Select "Log terminal output to": _DesktopDir_
+	2. ssh into CPE. ex: 10.205.164.10
+	3. use below command to read at+bnrinfo: read every 60 sec, until 3600 sec
+	   start_time=$(date +%s); while [ $(( $(date +%s) - start_time )) -lt 3600 ]; do echo -ne "$(date) - "; echo -ne "at+bnrinfo\r\n" | microcom -t 1000 /dev/ttyUSB1 | grep -E "dBm|bnrinfo"; sleep 60; done
+	4. paste the _DesktopDir_ output file content below to parse
 
 -->
 
@@ -146,10 +122,12 @@ RX3 power: -68 dBm,ecio: -10 dB, rsrp: -78 dBm,phase: 0 degree,sinr: -20 dB
   <ul>
     <li><strong>【How to use】</strong>
       <ul>
-        <li> 1. Use MobaXterm ssh to enter the CPE</li>
-        <li> 2. use command : <span class="red">while true; do echo -ne "$(date) - "; echo -ne "at+bnrinfo\r\n" |
-            microcom -t 1000 /dev/ttyUSB1; sleep 1; done </span></li>
-        <li> 3. Paste the <span class="red">entire console content</span> below to produce "Parsed excel results"</li>
+        <li> 1. MobaXterm Session -> SSH -> Termnial settings -> Select "Log terminal output to": _DesktopDir_</li>
+        <li> 2. ssh into CPE. ex: 10.205.164.10 </li>
+		<li> 3. use below command to read at+bnrinfo: read every 60 sec, until 3600 sec <br>
+				<span class="red">start_time=$(date +%s); while [ $(( $(date +%s) - start_time )) -lt 3600 ]; do echo -ne "$(date) - "; echo -ne "at+bnrinfo\r\n" | microcom -t 1000 /dev/ttyUSB1 | grep -E "dBm|bnrinfo"; sleep 60; done</span>
+		</li>
+        <li> 4. paste the _DesktopDir_ output file content below to parse</li>
         <textarea id="logInput" rows="10" cols="80"></textarea>
         <br>
         <button onclick="parseLog()">Parse and Export to Excel</button>
