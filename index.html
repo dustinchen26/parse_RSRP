@@ -69,7 +69,8 @@
         '<th>Time</th><th>PUSCH TX power</th><th>RSRP</th><th>SINR</th><th>RX0_rsrp</th><th>RX1_rsrp</th><th>RX2_rsrp</th><th>RX3_rsrp</th>';
 
       var rowNum = 1;
-      var data = [ // Initialize array with headers for Excel export
+    var data = [
+        // Initialize array with headers for Excel export
         ['Time', 'PUSCH TX power', 'RSRP', 'SINR', 'RX0_rsrp', 'RX1_rsrp', 'RX2_rsrp', 'RX3_rsrp']
       ];
 
@@ -80,7 +81,7 @@
           var newRow = outputTable.insertRow(rowNum);
 
           // Extract only month, date, and time
-          var time = match[1];
+            var time = match[1].split(' ').slice(1).join(' '); // Extracts month, date, and time
           newRow.insertCell(0).textContent = time;
           newRow.insertCell(1).textContent = match[2] ? match[2] + ' dBm' : 'N/A';
           newRow.insertCell(2).textContent = match[3] ? match[3] + ' dBm' : 'N/A';
